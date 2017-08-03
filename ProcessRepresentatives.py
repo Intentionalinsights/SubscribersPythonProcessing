@@ -21,8 +21,10 @@ stateCodeToNameMapper = StateCodeMapping()
 
 def createLocationInfoFromRow(row):
     #TODO: extract validation rules out
-    if not row['Address 1']:
-        return None
+    #API can still return results if a city, or zip is entered
+    #enable this rule if we only want to allow counting results via address provided.
+    #if not row['Address 1']:
+    #    return None
     if not row['Country']  == 'United States':
         return None
     if str(row['Address 1']).__contains__('P.O'):
@@ -74,7 +76,7 @@ def findRepresentativesByAddressList(locationInfoList, countOfPTPEntriesNotValid
             continue
 
         stateCode = representativeInfoDetails['normalizedInput']['state']
-        stateName = stateCodeToNameMapper[stateCode]
+        stateName = stateCodeToNameMapper.stateCodeToFullNameDictionary[stateCode]
         representatives = getRepresentativeNamesList(representativeInfoDetails['officials'])
 
         if stateCodeToPledgersStateData.has_key(stateName):
@@ -83,7 +85,7 @@ def findRepresentativesByAddressList(locationInfoList, countOfPTPEntriesNotValid
             print "New state found: " + stateName
             print "Adding new representatives to state: " + stateName
             print "Representatives: " + representatives
-            stateCodeToPledgersStateData[stateName] = StateData(stateCodeToNameMapper[stateName], stateCode, representatives)
+            stateCodeToPledgersStateData[stateName] = StateData(stateName, stateCode, representatives)
 
 with open(citizensDataLocation, 'rb') as f:
     proTruthPledgersList = []  # each value in each column will be mapped to a list
@@ -97,6 +99,14 @@ with open(citizensDataLocation, 'rb') as f:
 
     findRepresentativesByAddressList(proTruthPledgersList, countOfPTPEntriesNotValidForLookup)
 
+pledgeSummaryData = stateCodeToPledgersStateData.values()
 
-print(json.dumps(stateCodeToPledgersStateData.items(), indent = 4, cls=StateEncoder))
+jsonPledgeResults = json.dumps(pledgeSummaryData, indent = 4, cls=StateEncoder)
+print(jsonPledgeResults)
 print('Number of invalid entries not valid for representative retrieval: ' + str(countOfPTPEntriesNotValidForLookup))
+
+file = open("output/jsonPledgeResults.json", "w")
+
+file.write(jsonPledgeResults)
+
+file.close()

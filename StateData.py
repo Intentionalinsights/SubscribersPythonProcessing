@@ -74,10 +74,10 @@ class StateEncoder(json.JSONEncoder):
 class StateData(object):
 
     def __init__(self, name, code, governorNames):
+        self.name = name
         self.code = code
-        self.name = self.stateCodeToFullNameDictionary[code]
         self.pledgersCount = 1
-        self.governorNames = governorNames
+        self.publicOfficials = governorNames
 
 
     def increasePledgeCount(self):
