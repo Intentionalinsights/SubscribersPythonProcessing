@@ -6,19 +6,25 @@ import json
 import sys
 
 from LocationInfo import LocationInfo
+from StateData import StateData
+from StateData import StateEncoder
+from StateData import StateCodeMapping
 
 #Global variables section to cleanup later***********
 #citizensDataLocation = 'data/take-the-pro-truth-pledge-all-subs-2017-06-28.csv'
 citizensDataLocation = 'data/workingDataSet.csv'
 serverAPIRepresentativesUrl = 'https://content.googleapis.com/civicinfo/v2/representatives?address='
-stateToCitizenPTPSigningCount = {} #dictionary will increment counts
-stateToRepresentativesMap = {} #dictionary will contain names of all officials tied to that state
+stateCodeToPledgersStateData = {} #dictionary will increment counts
 countOfPTPEntriesNotValidForLookup = 0
+
+stateCodeToNameMapper = StateCodeMapping()
 
 def createLocationInfoFromRow(row):
     #TODO: extract validation rules out
-    if not row['Address 1']:
-        return None
+    #API can still return results if a city, or zip is entered
+    #enable this rule if we only want to allow counting results via address provided.
+    #if not row['Address 1']:
+    #    return None
     if not row['Country']  == 'United States':
         return None
     if str(row['Address 1']).__contains__('P.O'):
@@ -65,23 +71,21 @@ def findRepresentativesByAddressList(locationInfoList, countOfPTPEntriesNotValid
             continue
 
         representativeInfoDetails = json.loads(civicAPIResponse)
-        state = representativeInfoDetails['normalizedInput']['state']
-
-        if stateToCitizenPTPSigningCount.has_key(state):
-            stateToCitizenPTPSigningCount[state] = stateToCitizenPTPSigningCount[state] + 1
-        else:
-            print "New state found: " + state
-            stateToCitizenPTPSigningCount[state] = 1
-
         if not representativeInfoDetails.get('officials'):
             countOfPTPEntriesNotValidForLookup += 1
             continue
 
+        stateCode = representativeInfoDetails['normalizedInput']['state']
+        stateName = stateCodeToNameMapper.stateCodeToFullNameDictionary[stateCode]
         representatives = getRepresentativeNamesList(representativeInfoDetails['officials'])
-        if not stateToRepresentativesMap.has_key(state):
-            print "Adding new representatives to state: " + state
+
+        if stateCodeToPledgersStateData.has_key(stateName):
+            stateCodeToPledgersStateData[stateName].increasePledgeCount()
+        else:
+            print "New state found: " + stateName
+            print "Adding new representatives to state: " + stateName
             print "Representatives: " + representatives
-            stateToRepresentativesMap[state] = representatives
+            stateCodeToPledgersStateData[stateName] = StateData(stateName, stateCode, representatives)
 
 with open(citizensDataLocation, 'rb') as f:
     proTruthPledgersList = []  # each value in each column will be mapped to a list
@@ -95,7 +99,14 @@ with open(citizensDataLocation, 'rb') as f:
 
     findRepresentativesByAddressList(proTruthPledgersList, countOfPTPEntriesNotValidForLookup)
 
+pledgeSummaryData = stateCodeToPledgersStateData.values()
 
-print(json.dumps(stateToCitizenPTPSigningCount, indent = 4))
-print(json.dumps(stateToRepresentativesMap, indent = 4))
+jsonPledgeResults = json.dumps(pledgeSummaryData, indent = 4, cls=StateEncoder)
+print(jsonPledgeResults)
 print('Number of invalid entries not valid for representative retrieval: ' + str(countOfPTPEntriesNotValidForLookup))
+
+file = open("output/jsonPledgeResults.json", "w")
+
+file.write(jsonPledgeResults)
+
+file.close()

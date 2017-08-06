@@ -1,0 +1,20 @@
+[
+    {
+        "publicOfficials": "Thomas Wolf,Michael Stack", 
+        "pledgersCount": 1, 
+        "code": "PA", 
+        "name": "Pennsylvania"
+    }, 
+    {
+        "publicOfficials": "John R. Kasich,Mary Taylor,Kevin Bacon,Richard D. Brown", 
+        "pledgersCount": 4, 
+        "code": "OH", 
+        "name": "Ohio"
+    }, 
+    {
+        "publicOfficials": "Kim Reynolds,Adam Gregg,Jerry Behn,Chip Baltimore", 
+        "pledgersCount": 1, 
+        "code": "IA", 
+        "name": "Iowa"
+    }
+]
