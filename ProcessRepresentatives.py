@@ -11,11 +11,22 @@ from StateData import StateEncoder
 from StateData import StateCodeMapping
 
 #Global variables section to cleanup later***********
-#citizensDataLocation = 'data/take-the-pro-truth-pledge-all-subs-2017-06-28.csv'
-citizensDataLocation = 'data/workingDataSet.csv'
+citizensDataLocation = 'data/take-the-pro-truth-pledge-all-subs-2017-08-07.csv'
+pledgeNumberIdToProcessFrom = 1858
+
+processedFileNameForPledgersJsonData = "output/jsonPledgeResults.json"
+
 serverAPIRepresentativesUrl = 'https://content.googleapis.com/civicinfo/v2/representatives?address='
 stateCodeToPledgersStateData = {} #dictionary will increment counts
 countOfPTPEntriesNotValidForLookup = 0
+
+with open(processedFileNameForPledgersJsonData) as data_file:
+    jsonDataPledgers = json.loads(data_file.read())
+    for statePledgeData in jsonDataPledgers:
+        stateName = statePledgeData['name']
+        stateData = StateData(stateName, statePledgeData['code'], statePledgeData['publicOfficials'])
+        stateData.setPreProccessedPledgersCount(statePledgeData['pledgersCount'])
+        stateCodeToPledgersStateData[stateName] = stateData
 
 stateCodeToNameMapper = StateCodeMapping()
 
@@ -91,6 +102,9 @@ with open(citizensDataLocation, 'rb') as f:
     proTruthPledgersList = []  # each value in each column will be mapped to a list
     reader = csv.DictReader(f)
     for row in reader:
+        if(int(row['#']) < pledgeNumberIdToProcessFrom):
+            continue
+
         locationInfo = createLocationInfoFromRow(row)
         if locationInfo:
             proTruthPledgersList.append(locationInfo)
@@ -105,7 +119,7 @@ jsonPledgeResults = json.dumps(pledgeSummaryData, indent = 4, cls=StateEncoder)
 print(jsonPledgeResults)
 print('Number of invalid entries not valid for representative retrieval: ' + str(countOfPTPEntriesNotValidForLookup))
 
-file = open("output/jsonPledgeResults.json", "w")
+file = open(processedFileNameForPledgersJsonData, 'w')
 
 file.write(jsonPledgeResults)
 
