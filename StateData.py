@@ -82,3 +82,6 @@ class StateData(object):
 
     def increasePledgeCount(self):
         self.pledgersCount += 1
+
+    def setPreProccessedPledgersCount(self, pledgeCount):
+        self.pledgersCount = pledgeCount

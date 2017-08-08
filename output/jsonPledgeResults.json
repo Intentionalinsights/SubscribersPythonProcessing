@@ -1,20 +1,290 @@
 [
     {
-        "publicOfficials": "Thomas Wolf,Michael Stack", 
-        "pledgersCount": 1, 
-        "code": "PA", 
-        "name": "Pennsylvania"
+        "publicOfficials": "Phil Bryant,Tate Reeves,Chuck Younger,Jeffrey C. Smith", 
+        "pledgersCount": 6, 
+        "code": "MS", 
+        "name": "Mississippi"
     }, 
     {
-        "publicOfficials": "John R. Kasich,Mary Taylor,Kevin Bacon,Richard D. Brown", 
+        "publicOfficials": "Mary Fallin,Todd Lamb,Adam Pugh,Mike Osburn", 
+        "pledgersCount": 11, 
+        "code": "OK", 
+        "name": "Oklahoma"
+    }, 
+    {
+        "publicOfficials": "Matt Mead,Henry H.R. \"Hank\" Coe,Scott B. Court", 
         "pledgersCount": 4, 
+        "code": "WY", 
+        "name": "Wyoming"
+    }, 
+    {
+        "publicOfficials": "Mark Dayton,Tina Smith,Kari Dziedzic,Ilhan Omar", 
+        "pledgersCount": 21, 
+        "code": "MN", 
+        "name": "Minnesota"
+    }, 
+    {
+        "publicOfficials": "Bruce Rauner,Evelyn Sanguinetti,Wm. Sam McCann,Sara Wojcicki Jimenez", 
+        "pledgersCount": 26, 
+        "code": "IL", 
+        "name": "Illinois"
+    }, 
+    {
+        "publicOfficials": "Asa Hutchinson,Tim Griffin,Bryan King,Ron McNair", 
+        "pledgersCount": 11, 
+        "code": "AR", 
+        "name": "Arkansas"
+    }, 
+    {
+        "publicOfficials": "Susana Martinez,John Sanchez,Gerald Ortiz y Pino,G. Andres Romero", 
+        "pledgersCount": 11, 
+        "code": "NM", 
+        "name": "New Mexico"
+    }, 
+    {
+        "publicOfficials": "John R. Kasich,Mary Taylor,Stephanie L. Kunze,Jim Hughes", 
+        "pledgersCount": 518, 
         "code": "OH", 
         "name": "Ohio"
     }, 
     {
+        "publicOfficials": "Eric Holcomb,Suzanne Crouch,James Buck,Anthony Cook", 
+        "pledgersCount": 16, 
+        "code": "IN", 
+        "name": "Indiana"
+    }, 
+    {
+        "publicOfficials": "Larry Hogan,Boyd Rutherford,Brian J. Feldman,Kathleen M. Dumais,David Fraser-Hidalgo,Aruna Miller", 
+        "pledgersCount": 20, 
+        "code": "MD", 
+        "name": "Maryland"
+    }, 
+    {
+        "publicOfficials": "Jon Bel Edwards,Billy Nungesser,Karen Carter Peterson,Walt Leger", 
+        "pledgersCount": 3, 
+        "code": "LA", 
+        "name": "Louisiana"
+    }, 
+    {
+        "publicOfficials": "Greg Abbott,Dan Patrick,Charles Perry,Dustin Burrows", 
+        "pledgersCount": 69, 
+        "code": "TX", 
+        "name": "Texas"
+    }, 
+    {
+        "publicOfficials": "Doug Ducey,Robert Meza,Ray Martinez,Otoniel \"Tony\" Navarrete", 
+        "pledgersCount": 18, 
+        "code": "AZ", 
+        "name": "Arizona"
+    }, 
+    {
         "publicOfficials": "Kim Reynolds,Adam Gregg,Jerry Behn,Chip Baltimore", 
-        "pledgersCount": 1, 
+        "pledgersCount": 14, 
         "code": "IA", 
         "name": "Iowa"
+    }, 
+    {
+        "publicOfficials": "Rick Snyder,Brian Calley,Curtis Hertel,Samir \"Sam\" Singh", 
+        "pledgersCount": 24, 
+        "code": "MI", 
+        "name": "Michigan"
+    }, 
+    {
+        "publicOfficials": "Sam Brownback,Jeff Colyer,Steve Fitzgerald,Debbie Deere", 
+        "pledgersCount": 9, 
+        "code": "KS", 
+        "name": "Kansas"
+    }, 
+    {
+        "publicOfficials": "Gary Herbert,Spencer J. Cox,Jim Dabakis,Joel K. Briscoe", 
+        "pledgersCount": 21, 
+        "code": "UT", 
+        "name": "Utah"
+    }, 
+    {
+        "publicOfficials": "Terry McAuliffe,J. Chapman Petersen,David L. Bulova", 
+        "pledgersCount": 20, 
+        "code": "VA", 
+        "name": "Virginia"
+    }, 
+    {
+        "publicOfficials": "Kate Brown,Michael Dembrow,Alissa Keny-Guyer", 
+        "pledgersCount": 24, 
+        "code": "OR", 
+        "name": "Oregon"
+    }, 
+    {
+        "publicOfficials": "Dannel Malloy,Nancy Wyman,Martin M. Looney,Michael D'Agostino", 
+        "pledgersCount": 4, 
+        "code": "CT", 
+        "name": "Connecticut"
+    }, 
+    {
+        "publicOfficials": "Andrew M. Cuomo,Kathy Hochul,Brian Benjamin,Robert Rodriguez", 
+        "pledgersCount": 48, 
+        "code": "NY", 
+        "name": "New York"
+    }, 
+    {
+        "publicOfficials": "Edmund G. Brown Jr.,Gavin Newsom,Kevin de Leon,Laura Friedman", 
+        "pledgersCount": 104, 
+        "code": "CA", 
+        "name": "California"
+    }, 
+    {
+        "publicOfficials": "Charlie Baker,Karyn Polito,John F. Keenan,Mark J. Cusack", 
+        "pledgersCount": 21, 
+        "code": "MA", 
+        "name": "Massachusetts"
+    }, 
+    {
+        "publicOfficials": "Jim Justice,Ronald F. Miller,Kenny Mann,Tom Fast,Kayla Kessinger,Shirley Love", 
+        "pledgersCount": 6, 
+        "code": "WV", 
+        "name": "West Virginia"
+    }, 
+    {
+        "publicOfficials": "Henry McMaster,Kevin Bryant,Lawrence K. \"Larry\" Grooms,James H. Merrill", 
+        "pledgersCount": 5, 
+        "code": "SC", 
+        "name": "South Carolina"
+    }, 
+    {
+        "publicOfficials": "Chris Sununu,Bette R Lasky,Kenneth N. Gidge,Kevin Scully,Mark King", 
+        "pledgersCount": 5, 
+        "code": "NH", 
+        "name": "New Hampshire"
+    }, 
+    {
+        "publicOfficials": "Phil Scott,David Zuckerman,Philip Baruth,Christopher A Pearson,Michael Sirotkin,Debbie Ingram,Tim Ashe,Virginia \"Ginny\" Lyons,Selene Colburn,Brian Cina", 
+        "pledgersCount": 3, 
+        "code": "VT", 
+        "name": "Vermont"
+    }, 
+    {
+        "publicOfficials": "Nathan Deal,Casey Cagle,Steve Gooch,David Ralston", 
+        "pledgersCount": 29, 
+        "code": "GA", 
+        "name": "Georgia"
+    }, 
+    {
+        "publicOfficials": "Thomas Wolf,Michael Stack", 
+        "pledgersCount": 28, 
+        "code": "PA", 
+        "name": "Pennsylvania"
+    }, 
+    {
+        "publicOfficials": "Rick Scott,Carlos Lopez-Cantera", 
+        "pledgersCount": 37, 
+        "code": "FL", 
+        "name": "Florida"
+    }, 
+    {
+        "publicOfficials": "Bill Walker,Byron Mallott,Gary Stevens,Paul Seaton", 
+        "pledgersCount": 2, 
+        "code": "AK", 
+        "name": "Alaska"
+    }, 
+    {
+        "publicOfficials": "Matt Bevin,Jenean Hampton,Denise Harper Angel,Tom Burch", 
+        "pledgersCount": 14, 
+        "code": "KY", 
+        "name": "Kentucky"
+    }, 
+    {
+        "publicOfficials": "David Ige,Shan Tsutsui", 
+        "pledgersCount": 1, 
+        "code": "HI", 
+        "name": "Hawaii"
+    }, 
+    {
+        "publicOfficials": "Pete Ricketts,Mike Foley,Mike Hilgers", 
+        "pledgersCount": 4, 
+        "code": "NE", 
+        "name": "Nebraska"
+    }, 
+    {
+        "publicOfficials": "Eric Greitens,Mike Parson", 
+        "pledgersCount": 14, 
+        "code": "MO", 
+        "name": "Missouri"
+    }, 
+    {
+        "publicOfficials": "Scott Walker,Rebecca Kleefisch,Sheila Harsdorf,Rob Stafsholt", 
+        "pledgersCount": 17, 
+        "code": "WI", 
+        "name": "Wisconsin"
+    }, 
+    {
+        "publicOfficials": "Kay Ivey,Vacant,Vivian Davis Figures,James E. Buskey", 
+        "pledgersCount": 12, 
+        "code": "AL", 
+        "name": "Alabama"
+    }, 
+    {
+        "publicOfficials": "Dennis Daugaard,Matt Michels", 
+        "pledgersCount": 1, 
+        "code": "SD", 
+        "name": "South Dakota"
+    }, 
+    {
+        "publicOfficials": "John Hickenlooper,Donna Lynne,Bob Gardner,Terri Carver", 
+        "pledgersCount": 27, 
+        "code": "CO", 
+        "name": "Colorado"
+    }, 
+    {
+        "publicOfficials": "C.L. \"Butch\" Otter,Brad Little,Mark Harris,Marc Gibbs,Thomas F. Loertscher", 
+        "pledgersCount": 9, 
+        "code": "ID", 
+        "name": "Idaho"
+    }, 
+    {
+        "publicOfficials": "Chris Christie,Kim Guadagno,James Beach,Pamela R. Lampitt,Louis D. Greenwald", 
+        "pledgersCount": 11, 
+        "code": "NJ", 
+        "name": "New Jersey"
+    }, 
+    {
+        "publicOfficials": "Jay Inslee,Cyrus Habib,Sharon Brown,Brad Klippert,Larry Haler", 
+        "pledgersCount": 106, 
+        "code": "WA", 
+        "name": "Washington"
+    }, 
+    {
+        "publicOfficials": "Roy Cooper,Dan Forest,Dan Blue,Darren G. Jackson", 
+        "pledgersCount": 20, 
+        "code": "NC", 
+        "name": "North Carolina"
+    }, 
+    {
+        "publicOfficials": "Bill Haslam,Joey Hensley,Sheila Butt", 
+        "pledgersCount": 19, 
+        "code": "TN", 
+        "name": "Tennessee"
+    }, 
+    {
+        "publicOfficials": "Steve Bullock,Mike Cooney,Ryan Osmundson,Dan Bartel", 
+        "pledgersCount": 5, 
+        "code": "MT", 
+        "name": "Montana"
+    }, 
+    {
+        "publicOfficials": "Brian Sandoval,Mark Hutchison,Nicole Cannizzaro,Jim Marchant", 
+        "pledgersCount": 10, 
+        "code": "NV", 
+        "name": "Nevada"
+    }, 
+    {
+        "publicOfficials": "John C Carney Jr,La Mar Gunn,David B. McBride,David Bentz", 
+        "pledgersCount": 2, 
+        "code": "DE", 
+        "name": "Delaware"
+    }, 
+    {
+        "publicOfficials": "Paul LePage,Dawn Hill,Beth A. O'Connor", 
+        "pledgersCount": 5, 
+        "code": "ME", 
+        "name": "Maine"
     }
 ]
