@@ -1,290 +1,590 @@
 [
     {
-        "publicOfficials": "Phil Bryant,Tate Reeves,Chuck Younger,Jeffrey C. Smith", 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 25, 
+        "code": "WI", 
+        "name": "Wisconsin"
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "United States", 
         "pledgersCount": 6, 
         "code": "MS", 
         "name": "Mississippi"
     }, 
     {
-        "publicOfficials": "Mary Fallin,Todd Lamb,Adam Pugh,Mike Osburn", 
-        "pledgersCount": 11, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 14, 
         "code": "OK", 
         "name": "Oklahoma"
     }, 
     {
-        "publicOfficials": "Matt Mead,Henry H.R. \"Hank\" Coe,Scott B. Court", 
-        "pledgersCount": 4, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 3, 
         "code": "WY", 
         "name": "Wyoming"
     }, 
     {
-        "publicOfficials": "Mark Dayton,Tina Smith,Kari Dziedzic,Ilhan Omar", 
-        "pledgersCount": 21, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 30, 
         "code": "MN", 
         "name": "Minnesota"
     }, 
     {
-        "publicOfficials": "Bruce Rauner,Evelyn Sanguinetti,Wm. Sam McCann,Sara Wojcicki Jimenez", 
-        "pledgersCount": 26, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 44, 
         "code": "IL", 
         "name": "Illinois"
     }, 
     {
-        "publicOfficials": "Asa Hutchinson,Tim Griffin,Bryan King,Ron McNair", 
-        "pledgersCount": 11, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 6, 
+        "code": "DC", 
+        "name": "District Of Columbia"
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 12, 
         "code": "AR", 
         "name": "Arkansas"
     }, 
     {
-        "publicOfficials": "Susana Martinez,John Sanchez,Gerald Ortiz y Pino,G. Andres Romero", 
-        "pledgersCount": 11, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 14, 
         "code": "NM", 
         "name": "New Mexico"
     }, 
     {
-        "publicOfficials": "John R. Kasich,Mary Taylor,Stephanie L. Kunze,Jim Hughes", 
-        "pledgersCount": 518, 
-        "code": "OH", 
-        "name": "Ohio"
-    }, 
-    {
-        "publicOfficials": "Eric Holcomb,Suzanne Crouch,James Buck,Anthony Cook", 
-        "pledgersCount": 16, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 20, 
         "code": "IN", 
         "name": "Indiana"
     }, 
     {
-        "publicOfficials": "Larry Hogan,Boyd Rutherford,Brian J. Feldman,Kathleen M. Dumais,David Fraser-Hidalgo,Aruna Miller", 
-        "pledgersCount": 20, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 27, 
         "code": "MD", 
         "name": "Maryland"
     }, 
     {
-        "publicOfficials": "Jon Bel Edwards,Billy Nungesser,Karen Carter Peterson,Walt Leger", 
-        "pledgersCount": 3, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 5, 
         "code": "LA", 
         "name": "Louisiana"
     }, 
     {
-        "publicOfficials": "Greg Abbott,Dan Patrick,Charles Perry,Dustin Burrows", 
-        "pledgersCount": 69, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 107, 
         "code": "TX", 
         "name": "Texas"
     }, 
     {
-        "publicOfficials": "Doug Ducey,Robert Meza,Ray Martinez,Otoniel \"Tony\" Navarrete", 
-        "pledgersCount": 18, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 28, 
         "code": "AZ", 
         "name": "Arizona"
     }, 
     {
-        "publicOfficials": "Kim Reynolds,Adam Gregg,Jerry Behn,Chip Baltimore", 
+        "publicOfficials": "", 
+        "country": "United States", 
         "pledgersCount": 14, 
         "code": "IA", 
         "name": "Iowa"
     }, 
     {
-        "publicOfficials": "Rick Snyder,Brian Calley,Curtis Hertel,Samir \"Sam\" Singh", 
-        "pledgersCount": 24, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 33, 
         "code": "MI", 
         "name": "Michigan"
     }, 
     {
-        "publicOfficials": "Sam Brownback,Jeff Colyer,Steve Fitzgerald,Debbie Deere", 
-        "pledgersCount": 9, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 16, 
         "code": "KS", 
         "name": "Kansas"
     }, 
     {
-        "publicOfficials": "Gary Herbert,Spencer J. Cox,Jim Dabakis,Joel K. Briscoe", 
-        "pledgersCount": 21, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 56, 
         "code": "UT", 
         "name": "Utah"
     }, 
     {
-        "publicOfficials": "Terry McAuliffe,J. Chapman Petersen,David L. Bulova", 
-        "pledgersCount": 20, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 25, 
         "code": "VA", 
         "name": "Virginia"
     }, 
     {
-        "publicOfficials": "Kate Brown,Michael Dembrow,Alissa Keny-Guyer", 
-        "pledgersCount": 24, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 40, 
         "code": "OR", 
         "name": "Oregon"
     }, 
     {
-        "publicOfficials": "Dannel Malloy,Nancy Wyman,Martin M. Looney,Michael D'Agostino", 
-        "pledgersCount": 4, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 7, 
         "code": "CT", 
         "name": "Connecticut"
     }, 
     {
-        "publicOfficials": "Andrew M. Cuomo,Kathy Hochul,Brian Benjamin,Robert Rodriguez", 
-        "pledgersCount": 48, 
-        "code": "NY", 
-        "name": "New York"
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 20, 
+        "code": "TN", 
+        "name": "Tennessee"
     }, 
     {
-        "publicOfficials": "Edmund G. Brown Jr.,Gavin Newsom,Kevin de Leon,Laura Friedman", 
-        "pledgersCount": 104, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 161, 
         "code": "CA", 
         "name": "California"
     }, 
     {
-        "publicOfficials": "Charlie Baker,Karyn Polito,John F. Keenan,Mark J. Cusack", 
-        "pledgersCount": 21, 
-        "code": "MA", 
-        "name": "Massachusetts"
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 13, 
+        "code": "ID", 
+        "name": "Idaho"
     }, 
     {
-        "publicOfficials": "Jim Justice,Ronald F. Miller,Kenny Mann,Tom Fast,Kayla Kessinger,Shirley Love", 
-        "pledgersCount": 6, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 7, 
         "code": "WV", 
         "name": "West Virginia"
     }, 
     {
-        "publicOfficials": "Henry McMaster,Kevin Bryant,Lawrence K. \"Larry\" Grooms,James H. Merrill", 
-        "pledgersCount": 5, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 6, 
         "code": "SC", 
         "name": "South Carolina"
     }, 
     {
-        "publicOfficials": "Chris Sununu,Bette R Lasky,Kenneth N. Gidge,Kevin Scully,Mark King", 
-        "pledgersCount": 5, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 8, 
         "code": "NH", 
         "name": "New Hampshire"
     }, 
     {
-        "publicOfficials": "Phil Scott,David Zuckerman,Philip Baruth,Christopher A Pearson,Michael Sirotkin,Debbie Ingram,Tim Ashe,Virginia \"Ginny\" Lyons,Selene Colburn,Brian Cina", 
-        "pledgersCount": 3, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 35, 
+        "code": "MA", 
+        "name": "Massachusetts"
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 4, 
         "code": "VT", 
         "name": "Vermont"
     }, 
     {
-        "publicOfficials": "Nathan Deal,Casey Cagle,Steve Gooch,David Ralston", 
-        "pledgersCount": 29, 
-        "code": "GA", 
-        "name": "Georgia"
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 4, 
+        "code": "DE", 
+        "name": "Delaware"
     }, 
     {
-        "publicOfficials": "Thomas Wolf,Michael Stack", 
-        "pledgersCount": 28, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 39, 
         "code": "PA", 
         "name": "Pennsylvania"
     }, 
     {
-        "publicOfficials": "Rick Scott,Carlos Lopez-Cantera", 
-        "pledgersCount": 37, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 1, 
+        "code": "PR", 
+        "name": "Puerto Rico"
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 55, 
         "code": "FL", 
         "name": "Florida"
     }, 
     {
-        "publicOfficials": "Bill Walker,Byron Mallott,Gary Stevens,Paul Seaton", 
+        "publicOfficials": "", 
+        "country": "United States", 
         "pledgersCount": 2, 
         "code": "AK", 
         "name": "Alaska"
     }, 
     {
-        "publicOfficials": "Matt Bevin,Jenean Hampton,Denise Harper Angel,Tom Burch", 
-        "pledgersCount": 14, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 18, 
         "code": "KY", 
         "name": "Kentucky"
     }, 
     {
-        "publicOfficials": "David Ige,Shan Tsutsui", 
+        "publicOfficials": "", 
+        "country": "United States", 
         "pledgersCount": 1, 
         "code": "HI", 
         "name": "Hawaii"
     }, 
     {
-        "publicOfficials": "Pete Ricketts,Mike Foley,Mike Hilgers", 
-        "pledgersCount": 4, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 5, 
         "code": "NE", 
         "name": "Nebraska"
     }, 
     {
-        "publicOfficials": "Eric Greitens,Mike Parson", 
-        "pledgersCount": 14, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 21, 
         "code": "MO", 
         "name": "Missouri"
     }, 
     {
-        "publicOfficials": "Scott Walker,Rebecca Kleefisch,Sheila Harsdorf,Rob Stafsholt", 
-        "pledgersCount": 17, 
-        "code": "WI", 
-        "name": "Wisconsin"
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 604, 
+        "code": "OH", 
+        "name": "Ohio"
     }, 
     {
-        "publicOfficials": "Kay Ivey,Vacant,Vivian Davis Figures,James E. Buskey", 
-        "pledgersCount": 12, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 17, 
         "code": "AL", 
         "name": "Alabama"
     }, 
     {
-        "publicOfficials": "Dennis Daugaard,Matt Michels", 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 1, 
+        "code": "RI", 
+        "name": "Rhode Island"
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "United States", 
         "pledgersCount": 1, 
         "code": "SD", 
         "name": "South Dakota"
     }, 
     {
-        "publicOfficials": "John Hickenlooper,Donna Lynne,Bob Gardner,Terri Carver", 
-        "pledgersCount": 27, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 38, 
+        "code": "GA", 
+        "name": "Georgia"
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 41, 
         "code": "CO", 
         "name": "Colorado"
     }, 
     {
-        "publicOfficials": "C.L. \"Butch\" Otter,Brad Little,Mark Harris,Marc Gibbs,Thomas F. Loertscher", 
-        "pledgersCount": 9, 
-        "code": "ID", 
-        "name": "Idaho"
-    }, 
-    {
-        "publicOfficials": "Chris Christie,Kim Guadagno,James Beach,Pamela R. Lampitt,Louis D. Greenwald", 
-        "pledgersCount": 11, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 20, 
         "code": "NJ", 
         "name": "New Jersey"
     }, 
     {
-        "publicOfficials": "Jay Inslee,Cyrus Habib,Sharon Brown,Brad Klippert,Larry Haler", 
-        "pledgersCount": 106, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 153, 
         "code": "WA", 
         "name": "Washington"
     }, 
     {
-        "publicOfficials": "Roy Cooper,Dan Forest,Dan Blue,Darren G. Jackson", 
-        "pledgersCount": 20, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 31, 
         "code": "NC", 
         "name": "North Carolina"
     }, 
     {
-        "publicOfficials": "Bill Haslam,Joey Hensley,Sheila Butt", 
-        "pledgersCount": 19, 
-        "code": "TN", 
-        "name": "Tennessee"
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 61, 
+        "code": "NY", 
+        "name": "New York"
     }, 
     {
-        "publicOfficials": "Steve Bullock,Mike Cooney,Ryan Osmundson,Dan Bartel", 
-        "pledgersCount": 5, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 7, 
         "code": "MT", 
         "name": "Montana"
     }, 
     {
-        "publicOfficials": "Brian Sandoval,Mark Hutchison,Nicole Cannizzaro,Jim Marchant", 
-        "pledgersCount": 10, 
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 14, 
         "code": "NV", 
         "name": "Nevada"
     }, 
     {
-        "publicOfficials": "John C Carney Jr,La Mar Gunn,David B. McBride,David Bentz", 
-        "pledgersCount": 2, 
-        "code": "DE", 
-        "name": "Delaware"
-    }, 
-    {
-        "publicOfficials": "Paul LePage,Dawn Hill,Beth A. O'Connor", 
+        "publicOfficials": "", 
+        "country": "United States", 
         "pledgersCount": 5, 
         "code": "ME", 
         "name": "Maine"
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Turkey", 
+        "pledgersCount": 1, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Canada", 
+        "pledgersCount": 40, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Italy", 
+        "pledgersCount": 1, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "", 
+        "pledgersCount": 1, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "France", 
+        "pledgersCount": 2, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Ireland", 
+        "pledgersCount": 1, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Nigeria", 
+        "pledgersCount": 4, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Norway", 
+        "pledgersCount": 3, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Ecuador", 
+        "pledgersCount": 1, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Ghana", 
+        "pledgersCount": 1, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Australia", 
+        "pledgersCount": 39, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Iran (Islamic Republic Of)", 
+        "pledgersCount": 2, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Korea, Republic Of", 
+        "pledgersCount": 1, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Germany", 
+        "pledgersCount": 5, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Puerto Rico", 
+        "pledgersCount": 1, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Ukraine", 
+        "pledgersCount": 1, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Kyrgyzstan", 
+        "pledgersCount": 1, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Netherlands", 
+        "pledgersCount": 8, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Denmark", 
+        "pledgersCount": 3, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Poland", 
+        "pledgersCount": 3, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Finland", 
+        "pledgersCount": 1, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "United States", 
+        "pledgersCount": 2236, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Sweden", 
+        "pledgersCount": 7, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Hungary", 
+        "pledgersCount": 1, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Switzerland", 
+        "pledgersCount": 3, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "New Zealand", 
+        "pledgersCount": 6, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "South Africa", 
+        "pledgersCount": 4, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Tunisia", 
+        "pledgersCount": 1, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "India", 
+        "pledgersCount": 4, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "United Kingdom", 
+        "pledgersCount": 36, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Malaysia", 
+        "pledgersCount": 1, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Colombia", 
+        "pledgersCount": 2, 
+        "code": "", 
+        "name": ""
+    }, 
+    {
+        "publicOfficials": "", 
+        "country": "Japan", 
+        "pledgersCount": 1, 
+        "code": "", 
+        "name": ""
     }
 ]

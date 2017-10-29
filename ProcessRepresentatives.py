@@ -6,38 +6,39 @@ import json
 import sys
 
 from LocationInfo import LocationInfo
-from StateData import StateData
-from StateData import StateEncoder
-from StateData import StateCodeMapping
+from PledgerLocation import PledgerLocation
+from PledgerLocation import StateEncoder
+from PledgerLocation import StateCodeMapping
 
 #Global variables section to cleanup later***********
-citizensDataLocation = 'data/take-the-pro-truth-pledge-all-subs-2017-08-07.csv'
-pledgeNumberIdToProcessFrom = 1858
+citizensDataLocation = 'data/take-the-pro-truth-pledge-all-subs-2017-08-07test.csv'
+pledgeNumberIdToProcessFrom = 2582
 
 processedFileNameForPledgersJsonData = "output/jsonPledgeResults.json"
 
+shouldFetchAPIRepresentativeData = False
 serverAPIRepresentativesUrl = 'https://content.googleapis.com/civicinfo/v2/representatives?address='
 stateCodeToPledgersStateData = {} #dictionary will increment counts
+countriesPledgersData = {}
 countOfPTPEntriesNotValidForLookup = 0
 
 with open(processedFileNameForPledgersJsonData) as data_file:
-    jsonDataPledgers = json.loads(data_file.read())
-    for statePledgeData in jsonDataPledgers:
-        stateName = statePledgeData['name']
-        stateData = StateData(stateName, statePledgeData['code'], statePledgeData['publicOfficials'])
-        stateData.setPreProccessedPledgersCount(statePledgeData['pledgersCount'])
-        stateCodeToPledgersStateData[stateName] = stateData
+    jsonPledgeResultsPastData = data_file.read()
+    if len(jsonPledgeResultsPastData) > 0:
+        jsonDataPledgers = json.loads(jsonPledgeResultsPastData)
+        for statePledgeData in jsonDataPledgers:
+            stateName = statePledgeData['name']
+            pledgerLocation = PledgerLocation(stateName, statePledgeData['code'], statePledgeData['publicOfficials'], statePledgeData["country"])
+            pledgerLocation.setPreProccessedPledgersCount(statePledgeData['pledgersCount'])
+            if len(pledgerLocation.code) > 0:
+                stateCodeToPledgersStateData[stateName] = pledgerLocation
+            else:
+                countriesPledgersData[pledgerLocation.country] = pledgerLocation
 
 stateCodeToNameMapper = StateCodeMapping()
 
 def createLocationInfoFromRow(row):
     #TODO: extract validation rules out
-    #API can still return results if a city, or zip is entered
-    #enable this rule if we only want to allow counting results via address provided.
-    #if not row['Address 1']:
-    #    return None
-    if not row['Country']  == 'United States':
-        return None
     if str(row['Address 1']).__contains__('P.O'):
         return None
     if str(row['Address 1']).__contains__('PO Box'):
@@ -47,8 +48,7 @@ def createLocationInfoFromRow(row):
     if str(row['Address 1']).__contains__(','):
         return None
 
-    #print "Adding address: " + row['Address 1']
-    locationInfo = LocationInfo(row['Address 1'], row['City'], row['Zip'], row['Country'])
+    locationInfo = LocationInfo(row['Address 1'], row['City'], row['Region'], row['Zip'], row['Country'])
     return locationInfo
 
 def getRequestUrlForAddress(addressQueryInfo):
@@ -70,6 +70,49 @@ def fetchDataForCivicAddress(encodedUrl):
         print e
         return None
 
+def addToCountryCount(locationInfo):
+    if countriesPledgersData.has_key(locationInfo.country):
+        countriesPledgersData[locationInfo.country].increasePledgeCount()
+    else:
+        print "New country found: " + locationInfo.country
+        countriesPledgersData[locationInfo.country] = PledgerLocation("", "", "", locationInfo.country)
+
+def countPledgersFromDataEntered(locationInfoList):
+    for locationInfo in locationInfoList:
+        print locationInfo.getFullAddress()
+
+        if locationInfo.isUSBased() & locationInfo.hasValidStateData():
+            if len(locationInfo.region) == 2:
+                stateCode = locationInfo.region
+                try:
+                    stateName = stateCodeToNameMapper.stateCodeToFullNameDictionary[stateCode]
+                    addToStateCount(stateName, stateCode, "", locationInfo.country)
+                except:
+                    e = sys.exc_info()[0]
+                    print str(e) + " could not map stateCode " + stateCode + " to stateName."
+            else:
+                stateName = locationInfo.region
+                try:
+                    stateCode = stateCodeToNameMapper.stateNameToCodeDictionary[stateName]
+                    addToStateCount(stateName, stateCode, "", locationInfo.country)
+                except:
+                    e = sys.exc_info()[0]
+                    print str(e) + " could not map stateName " + stateName + " to stateCode."
+
+        addToCountryCount(locationInfo)
+        stateName = ""
+        stateCode = ""
+
+
+def addToStateCount(stateName, stateCode, representatives, country):
+    if stateCodeToPledgersStateData.has_key(stateName):
+        stateCodeToPledgersStateData[stateName].increasePledgeCount()
+    else:
+        print "New state found: " + stateName
+        print "Adding new representatives to state: " + stateName
+        print "Representatives: " + representatives
+        stateCodeToPledgersStateData[stateName] = PledgerLocation(stateName, stateCode, representatives, country)
+
 def findRepresentativesByAddressList(locationInfoList, countOfPTPEntriesNotValidForLookup):
     for entry in locationInfoList:
         print entry.getFullAddress()
@@ -90,13 +133,7 @@ def findRepresentativesByAddressList(locationInfoList, countOfPTPEntriesNotValid
         stateName = stateCodeToNameMapper.stateCodeToFullNameDictionary[stateCode]
         representatives = getRepresentativeNamesList(representativeInfoDetails['officials'])
 
-        if stateCodeToPledgersStateData.has_key(stateName):
-            stateCodeToPledgersStateData[stateName].increasePledgeCount()
-        else:
-            print "New state found: " + stateName
-            print "Adding new representatives to state: " + stateName
-            print "Representatives: " + representatives
-            stateCodeToPledgersStateData[stateName] = StateData(stateName, stateCode, representatives)
+        addToStateCount(stateName, stateCode, representatives)
 
 with open(citizensDataLocation, 'rb') as f:
     proTruthPledgersList = []  # each value in each column will be mapped to a list
@@ -111,9 +148,12 @@ with open(citizensDataLocation, 'rb') as f:
         else:
             countOfPTPEntriesNotValidForLookup += 1
 
-    findRepresentativesByAddressList(proTruthPledgersList, countOfPTPEntriesNotValidForLookup)
+    if (shouldFetchAPIRepresentativeData):
+        findRepresentativesByAddressList(proTruthPledgersList, countOfPTPEntriesNotValidForLookup)
+    else:
+        countPledgersFromDataEntered(proTruthPledgersList)
 
-pledgeSummaryData = stateCodeToPledgersStateData.values()
+pledgeSummaryData = stateCodeToPledgersStateData.values() + countriesPledgersData.values()
 
 jsonPledgeResults = json.dumps(pledgeSummaryData, indent = 4, cls=StateEncoder)
 print(jsonPledgeResults)
